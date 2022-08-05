@@ -80,4 +80,8 @@ header {
     .header__socials, .scroll__down {
         display: none;
     }
+
+    .me {
+        padding: 2rem 0 0 0;
+    }
 }

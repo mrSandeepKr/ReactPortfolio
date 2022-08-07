@@ -10,17 +10,12 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    overflow: hidden;
 }
 
 .portfolio__item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
-}
-
-.porfolio__item-image {
-    border-radius: 1.5rem;
-    overflow: hidden;
-    max-height: 15rem;
 }
 
 .portfolio__item h3 {
@@ -39,6 +34,23 @@
     margin-top: 8%;
 }
 
+.porfolio__item-display {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    max-height: 22rem;
+}
+
+.porfolio__item-display .swiper {
+    max-height: 22rem;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    color: var(--color-primary);
+}
+.swiper-pagination-bullets-active {
+    color: var(--color-primary);
+}
+
 /* ===========================================================================================================================================*/
 /* ========================================================== MEDIA QUERIES (MEDIUM DEVICES) =================================================*/
 /* ===========================================================================================================================================*/
@@ -49,7 +61,6 @@
         gap: 1.2rem;
     }
 }
-
 
 /* ===========================================================================================================================================*/
 /* ========================================================== MEDIA QUERIES (SMALL DEVICES) =================================================*/

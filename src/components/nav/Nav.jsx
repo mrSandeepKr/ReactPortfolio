@@ -11,7 +11,7 @@ const nav = () => {
   
   return (
     <nav>
-      <a href='#' onClick= {() => {setActiveNacv('#')}} className= {activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
+      <a href='#home' onClick= {() => {setActiveNacv('#')}} className= {activeNav === '#home' ? 'active' : ''}><AiOutlineHome/></a>
       <a href='#about' onClick= {() => {setActiveNacv('#about')}} className= {activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
       <a href='#experience' onClick= {() => {setActiveNacv('#experience')}} className= {activeNav === '#experience' ? 'active' : ''}> <BiBook/></a>
       <a href='#services' onClick= {() => {setActiveNacv('#services')}} className= {activeNav === '#services' ? 'active' : ''}> <RiServiceLine/></a>     

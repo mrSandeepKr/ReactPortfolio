@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Swiper Imports
-import { Navigation, Pagination, Autoplay} from 'swiper'
+import { Pagination, Autoplay} from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
@@ -19,7 +19,7 @@ const PortfolioItem = (
 
             <div className='portfolio__item-details'>
                 <h3>{model.title}</h3>
-                <a href={model.projectURL} className='btn' target ='_blank'>LINK</a>
+                <a href={model.projectURL} className='btn' target ='_blank' rel="noopener noreferrer">LINK</a>
             </div>
         </article>
     )
@@ -29,7 +29,7 @@ const PortfolioGraphicDetail = (
     imageURLs
 ) => {
     imageURLs = imageURLs.imageURLs
-    if(imageURLs.length == 1) {
+    if(imageURLs.length === 1) {
         return (
             <img src = {imageURLs[0]}  alt = {imageURLs[0]}/>
         )

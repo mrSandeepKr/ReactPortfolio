@@ -18,7 +18,7 @@ const ContactOptionsItem = (
             </h5>
 
             <div className='contact__option-action'>
-                <a href ={model.href} target = '_blank'> Send a message </a>
+                <a href ={model.href} target = '_blank' rel="noopener noreferrer"> Send a message </a>
             </div>
         </div>
     )
